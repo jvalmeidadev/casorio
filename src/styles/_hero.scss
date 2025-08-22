@@ -1,0 +1,44 @@
+.hero {
+    padding-top: 64px;  //ESPAÇO DE CIMA
+    padding-bottom: 100px;  //ESPAÇO DE BAXIO
+    background-image: url(../images/5-dicas-para-melhorar-o-casamento-2-1024x683.jpg); //IMG DE FUNDO
+    background-repeat: no-repeat; //N REPETIR A IMG
+    background-size: cover;       //IMG COMPLETA O CONTAINER
+    position: relative; //IMG DE FUNDO
+
+    .container {
+        position: relative; //IMG DE FUNDO
+    }
+
+    &::before {             //CONFG IMG DE FUNDO
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        content: '';
+        opacity: .4;
+    }
+
+    &__text {   //PARAGRAFO DENTRO DO HERO ESPACAMENTO
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: 'love';
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
+

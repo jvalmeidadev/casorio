@@ -1,4 +1,33 @@
-body {
-    background-color: rgb(254, 17, 17);
+@use "hero";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.container {   //CONFIGURANDO O CONTAINER
+    max-width: 960px; //LARGURA MAXIMA
+    width: 100%;      //LARGURA TOTAL
+    margin: 0 auto;   //CENTRALIZA
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px ) {
+        max-width: 90%;
+    }
+}
+
+
+
+@font-face {
+    font-family: "love";
+    src: url('/fonts/josephsophia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
